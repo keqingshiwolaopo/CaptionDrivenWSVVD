@@ -1,6 +1,6 @@
 import argparse
 
-parser = argparse.ArgumentParser(description='MSBT')
+parser = argparse.ArgumentParser(description='CDWSVVD')
 parser.add_argument('--rgb-list', default='./list/ucf/rgb.list', help='list of rgb features ')
 parser.add_argument('--flow-list', default='./list/ucf/flow.list', help='list of flow features')
 parser.add_argument('--test-rgb-list', default='./list/ucf/rgb_test.list', help='list of test rgb features ')
@@ -10,7 +10,7 @@ parser.add_argument('--gpus', default='0', type=str,  help='gpus')
 parser.add_argument('--lr', type=float, default=0.005)
 parser.add_argument('--batch-size', type=int, default=128, help='number of instances in a batch of data (default: 128)')
 parser.add_argument('--workers', default=8, help='number of workers in dataloader')
-parser.add_argument('--model-name', default='MSBT', help='name to save model')
+parser.add_argument('--model-name', default='CDWSVVD', help='name to save model')
 parser.add_argument('--v_feature_size', type=int, default=1024)
 parser.add_argument('--f_feature_size', type=int, default=1024)
 parser.add_argument('--max_seqlen', type=int, default=200, help='maximum sequence length during training (default: 750)')
